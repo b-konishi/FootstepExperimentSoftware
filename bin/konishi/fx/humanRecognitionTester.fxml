@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1092.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="konishi.fx.controler.FxControl">
+   <children>
+      <VBox layoutX="23.0" layoutY="219.0" prefHeight="450.0" prefWidth="250.0" spacing="50.0">
+         <children>
+            <HBox spacing="30.0">
+               <children>
+                  <Label fx:id="train_labelA" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" text="A">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="trainA" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="104.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox spacing="30.0">
+               <children>
+                  <Label fx:id="train_labelB" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" text="B">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="trainB" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="104.0" onKeyPressed="#handleButtonPressed" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+            <HBox spacing="30.0">
+               <children>
+                  <Label fx:id="train_labelC" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" text="C">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="trainC" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="104.0" onKeyPressed="#handleButtonPressed" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+            <HBox spacing="30.0">
+               <children>
+                  <Label fx:id="train_labelD" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" text="D">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="trainD" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="104.0" onKeyPressed="#handleButtonPressed" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+            <HBox spacing="30.0">
+               <children>
+                  <Label fx:id="train_labelE" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" text="E">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="trainE" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="104.0" onKeyPressed="#handleButtonPressed" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="770.0" layoutY="75.0" prefHeight="680.0" prefWidth="262.0" spacing="20.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test1" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test2" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test3" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test4" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test5" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test6" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test7" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test8" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test9" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label9" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fx:id="test10" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#handleButtonPressed" preserveRatio="true">
+                     <image>
+                        <Image url="@play.png" />
+                     </image></ImageView>
+                  <ChoiceBox fx:id="test_choice10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="99.0" />
+                  <Label fx:id="test_label10" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" textFill="RED">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="432.0" layoutY="534.0">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="184.0" text="Accuracy">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="accuracy_label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="102.0" text="○○ %" textFill="RED">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="33.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="Recognition Footsteps by Human">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="101.0" layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="A〜Ｅまでの音声を聴いて、右の10個の音声がどの音声かをそれぞれ選択してください">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="428.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#handleSubmitButton" prefHeight="66.0" prefWidth="191.0" text="SUBMIT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="195.0" layoutY="111.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="右のテストデータは全て、A〜Eのうちの誰かの足音です">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="thanks" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="720.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="640.0" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <HBox layoutX="319.0" layoutY="240.0" spacing="100.0">
+         <children>
+            <Label alignment="CENTER" layoutX="277.0" layoutY="221.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="← 覚えるデータ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="495.0" layoutY="228.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="テストデータ →">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="write" layoutX="86.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#handleWriteButton" prefHeight="26.0" prefWidth="70.0" text="Write">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="user" layoutX="448.0" layoutY="342.0" promptText="名字をローマ字で入力">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="362.0" layoutY="333.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="Name">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear" layoutX="486.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#handleClearButton" prefHeight="26.0" prefWidth="70.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="143.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" text="わからない場合も適当でも構わないので全ての項目に答えてください">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

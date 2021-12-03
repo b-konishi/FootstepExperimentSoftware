@@ -1,0 +1,4 @@
+.*
+!.gitignore
+src/konishi/fx/controler/data
+bin/konishi/fx/controler/data
